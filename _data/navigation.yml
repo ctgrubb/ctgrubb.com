@@ -17,6 +17,4 @@ main:
     
   - title: "Packages"
     url: /packages/
-    subcategories:
-      - subtitle: "lemur.pack"
-        suburl: "/packages/lemur.pack/"
+
