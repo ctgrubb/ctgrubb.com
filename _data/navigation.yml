@@ -16,6 +16,7 @@ main:
     url: /recipes/
     
   - title: "Packages"
+    href: /packages/
     subcategories:
       - subtitle: "lemur.pack"
-        subhref: "/lemur.pack/"
+        subhref: "/packages/lemur.pack/"
