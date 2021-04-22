@@ -1,7 +1,0 @@
----
-layout: archive
-title: "Packages"
-permalink: /packages/
-author_profile: true
----
-
