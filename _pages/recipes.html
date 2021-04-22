@@ -7,21 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
- <div class="row">
-  <div class="column">
-    <a href="https://ctgrubb.github.io/lemur.pack/">
-			<figure class="iblock">
-				<img alt="lemur.pacl" src="/images/lp_tempphoto.png" style="width:100%">
-				<figcaption>lemur.pack</figcaption>
-			</figure>
-		</a>
+<div class="container">
+
+  <h1>Books</h1>
+  <p>Here's all the lovely books we have.</p>
+
+  <div class="clearfix">
+  {% for book in site.books %}
+  {% include book-preview.html book=book %}
+  {% endfor %}
   </div>
-  <div class="column">
-		<a href="https://ctgrubb.github.io/lemur.pack/">
-		  <figure class="iblock">
-				<img alt="lemur.pacl" src="/images/lp_tempphoto.png" style="width:100%">
-				<figcaption>lemur.pack</figcaption>
-			</figure>
-		</a>
-  </div>
-</div> 
+
+</div>
