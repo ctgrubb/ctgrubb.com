@@ -11,13 +11,18 @@ redirect_from:
 
 Education
 ======
+* PhD in Statistics, Virginia Tech, May 2023 (expected)
 * B.S. in Mathematics, Millersville University, 2016
 
 Work experience
 ======
-* 2016 - 2017: Graduate Teaching Assistant
-
-* 2018 - 2021: Graduate Research Assistant
+* Lead Collaborator, Statistical Applications and Innovations Group (May 2017 - May 2021)
+	Helped approximately 100 graduate students and university faculty with statistics important for their masters' theses, dissertations, or publications. Taught several short courses (virtual and in-person) on base R graphics, R graphics using `ggplot2`, categorical data analysis, and regression and ANOVA. 
+	Worked on a number of special projects and/or grants:
+		* Grant - Lung Health Sensors (05/2021 - 05/2022)
+		* Special - VT Covid-19 Wastewater Monitoring
+* Data Science Intern, Microsoft (Summer, 2019)
+	Testing
 
 Publications
 ======
@@ -37,6 +42,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 5 different slack teams
+
