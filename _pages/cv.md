@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* PhD in Statistics, Virginia Tech, May 2023 (expected)
+* PhD in Statistics, Virginia Tech, July 2023 (expected)
 * B.S. in Mathematics, Millersville University, 2016
 
 Work experience
@@ -31,7 +31,7 @@ Publications
   
 Talks
 ======
-  <ul>{% for post in site.talks %}
+  <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
