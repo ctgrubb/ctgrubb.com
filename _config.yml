@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Christopher Grubb"
 title_separator          : "-"
 name                     : &name "Christopher Grubb"
-description              : &description "Statistics PhD Candidate at Virginia Tech"
+description              : &description "Research Scientist,\nCenter for Biostatistics and Health Data Science"
 url                      : https://ctgrubb.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ctgrubb/ctgrubb.com"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Christopher Grubb"
   avatar           : "profile.jpg"
-  bio              : "Statistics PhD Candidate at Virginia Tech"
+  bio              : "Research Scientist"
   location         : "Blacksburg, Virginia, USA"
-  employer         :
+  employer         : "Center for Biostatistics and Health Data Science"
   pubmed           : 
   googlescholar    : 
   email            : "ctgrubb@vt.edu"
