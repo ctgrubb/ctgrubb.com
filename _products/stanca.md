@@ -8,9 +8,9 @@ permalink: /products/stanca
 This is an R Shiny dashboard that I created with Dr. Stanca M. Ciupe to operationalize the mathematical model by allowing an interactive experience where users can tweak various parameter settings and visualize the relevant outcomes. The dashboard is available <a href="https://ctgrubb.shinyapps.io/stanca-dashboard/" target="_blank" rel="noopener noreferrer">here</a>.
 
 
-<iframe src="https://ctgrubb.shinyapps.io/stanca-dashboard/"
-        width="100%"
-        height="900px"
-        style="border:none;">
-</iframe>
+<a href="https://ctgrubb.shinyapps.io/stanca-dashboard/" target="_blank">
+  <img src="/images/stanca-dashboard.png"
+       alt="STANCA Dashboard screenshot"
+       style="width:100%; height:auto; border-radius:8px;">
+</a>
 
