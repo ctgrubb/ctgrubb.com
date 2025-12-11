@@ -17,7 +17,7 @@
           {% endif %}
 
           <a href="{{ domain }}{{ nav.url }}"
-             {% if nav.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+             {% if nav.url contains ".pdf" or nav.url contains "://" %}target="_blank" rel="noopener noreferrer"{% endif %}>
             <span class="nav__sub-title">{{ nav.title }}</span>
           </a>
         {% else %}
@@ -43,7 +43,7 @@
 
               <li>
                 <a href="{{ domain }}{{ child.url }}" class="{{ active }}"
-                   {% if child.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                   {% if child.url contains ".pdf" or child.url contains "://" %}target="_blank" rel="noopener noreferrer"{% endif %}>
                    {{ child.title }}
                 </a>
               </li>
