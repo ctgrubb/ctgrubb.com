@@ -1,16 +1,10 @@
 ---
-title: "Stanca"
+title: "Modeling the influence of vaccine administration on COVID-19 testing strategies"
 collection: products
 type: "Talk"
 permalink: /products/stanca
 ---
 
-This was a brief talk covering collaborative work with Advancement at Virginia tech, aimed towards improving models to predict future volunteership, event attendance, and donations.
+This is an R Shiny dashboard that I created with Dr. Stanca M. Ciupe to operationalize the mathematical model by allowing an interactive experience where users can tweak various parameter settings and visualize the relevant outcomes.
 
 <iframe src="https://ctgrubb.shinyapps.io/stanca-dashboard/" width="100%" height="600px" frameborder="no"></iframe>
-
-
-
-Abstract
-======
-Strong alumni engagement, as measured through volunteering, attending events, and giving, strengthens any university community. University Advancement at Virginia Tech contracted the Virginia Tech Statistical Applications and Innovations Group to develop models intending to improve alumni engagement. Machine learning techniques were employed to predict engagement; the resulting predictions identify individuals who are likely to engage with the university but are not engaging or new constituents likely to engage. Several hurdles were encountered, including understanding the business background, cleaning data, engineering features, developing a modeling plan, etc. One of the biggest challenges for this project was a lack of computing power available to handle the volume of data, feature engineering, and model fitting. This led to a search for R packages which could fit the desired machine learning models as quickly as possible. Eventually, the package H2O was chosen and used for iterative model building and deployment. This poster will highlight these challenges as well as detail the entire data science process from project definition to model implementation in a case study format.
