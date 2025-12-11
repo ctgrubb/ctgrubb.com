@@ -1,56 +1,45 @@
 {% include base_path %}
 {% assign navigation = site.data.navigation[include.nav] %}
 
-<nav class="nav__list">
-  {% if page.sidebar.title %}
-    <header><h4 class="nav__title" style="padding: 0;">{{ page.sidebar.title }}</h4></header>
-  {% endif %}
-  <ul>
-    {% for nav in navigation %}
-      <li>
-        {% if nav.url %}
-          {% comment %}internal/external URL check{% endcomment %}
-          {% if nav.url contains "://" %}
-            {% assign domain = "" %}
-          {% else %}
-            {% assign domain = base_path %}
-          {% endif %}
-
-          <a href="{{ domain }}{{ nav.url }}"
-             {% if nav.url contains ".pdf" or nav.url contains "://" %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            <span class="nav__sub-title">{{ nav.title }}</span>
-          </a>
+<ul class="sidebar-nav">
+  {% for nav in navigation %}
+    <li>
+      {% if nav.url %}
+        {% comment %}internal/external URL check{% endcomment %}
+        {% if nav.url contains "://" %}
+          {% assign domain = "" %}
         {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
+          {% assign domain = base_path %}
         {% endif %}
 
-        {% if nav.children != null %}
-          <ul>
-            {% for child in nav.children %}
-              {% comment %}internal/external URL check{% endcomment %}
-              {% if child.url contains "://" %}
-                {% assign domain = "" %}
-              {% else %}
-                {% assign domain = base_path %}
-              {% endif %}
+        <a href="{{ domain }}{{ nav.url }}"
+           {% if nav.url contains "://" or nav.url contains ".pdf" %}target="_blank" rel="noopener noreferrer"{% endif %}>
+           {{ nav.title }}
+        </a>
+      {% else %}
+        <span>{{ nav.title }}</span>
+      {% endif %}
 
-              {% comment %}set "active" class on current page{% endcomment %}
-              {% if child.url == page.url %}
-                {% assign active = "active" %}
-              {% else %}
-                {% assign active = "" %}
-              {% endif %}
+      {% if nav.children != null %}
+        <ul>
+          {% for child in nav.children %}
+            {% if child.url contains "://" %}
+              {% assign domain = "" %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
 
-              <li>
-                <a href="{{ domain }}{{ child.url }}" class="{{ active }}"
-                   {% if child.url contains ".pdf" or child.url contains "://" %}target="_blank" rel="noopener noreferrer"{% endif %}>
-                   {{ child.title }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+            {% assign active = child.url == page.url | default: false | ternary: "active", "" %}
+
+            <li>
+              <a href="{{ domain }}{{ child.url }}" class="{{ active }}"
+                 {% if child.url contains "://" or child.url contains ".pdf" %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                 {{ child.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
