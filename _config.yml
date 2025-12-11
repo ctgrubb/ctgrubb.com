@@ -187,6 +187,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  products:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -244,6 +247,15 @@ defaults:
       layout: talk
       author_profile: true
       share: false
+  # _products
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: products
+      author_profile: true
+      share: false
+      comment: false
 
 # Sass/SCSS
 sass:
