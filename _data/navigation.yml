@@ -2,6 +2,7 @@
 main:
   - title: "CV"
     url: /images/Curriculum_Vitae.pdf
+    external: true
 
   - title: "Publications"
     url: /publications/
@@ -17,4 +18,5 @@ main:
     
   - title: "Food"
     url: https://food.ctgrubb.com
+    external: true
 
