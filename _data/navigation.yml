@@ -12,6 +12,9 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
+  - title: "Products"
+    url: /products/    
+    
   - title: "Food"
     url: https://food.ctgrubb.com
 
